@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: inline-block;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    outline: 2px solid #456b8a;
+    border-radius: 6px;
+}
+
+form label,
+form select,
+form button {
+    font: inherit;
+}

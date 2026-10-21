@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calgary part 3 Yahoo</title>
+
+    <link rel="stylesheet" href="calgaryPart3.css">
+
+</head>
+
+
+<body>
+    <h1>Calgary part 3 Yahoo</h1>
+
+    <br>
+    <h3>This form returns the count of  certain water bodies:</h3>
+    <p>(Rivers will be called watercourse in the python outhput)</p>
+    <form id="waterForm" action="http://10.41.80.45:8080/wmaps/engo451/2026/u42/calgaryPart3.py" method="get">
+        <label for="waterType">Water type:</label>
+        <select id="waterType" name="waterType">
+            <option value="Lake">Lake</option>
+            <option value="Watercourse">River</option>
+            <option value="Reservoir">Reservoir</option>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+<br><br>
+
+    <h3>This form returns the count of road segments in a certain quadrant:</h3>
+    <form id="quadrant" action="http://10.41.80.45:8080/wmaps/engo451/2026/u42/calgaryPart3.py" method="get">
+        <label for="quadrant">Quadrant:</label>
+        <select id="quadrant" name="quadrant">
+            <option value="Northwest">NW</option>
+            <option value="Northeast">NE</option>
+            <option value="Southwest">SW</option>
+            <option value="Southeast">SE</option>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+
+
+    </form>
+
+    <br><br>
+    <h4>This form counts the junctions in Calgary:</h4>
+    <form id="junctionForm" action="http://10.41.80.45:8080/wmaps/engo451/2026/u42/calgaryPart3.py" method="get">
+        <input type="hidden" name="query" value="junction_count">
+        <button type="submit">Count Junctions</button>
+    </form>
+</body>
+
+</html>
